@@ -5,35 +5,79 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>El Blog de Eduardo🤘</title>
+  <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
   <header>
+    <!--NavBar here-->
     <nav>
-      <p>Setup</p>
-      <ol>
-        <li>
-          Google Chrome
-        </li>
-        <li>
-          Visual Studio Code
-        </li>
-        <li>
-          Figma
-        </li>
-        <li>
-          GitHub
-        </li>
-      </ol>
-
-      <p>Conceptos esenciales del desarrollo web</p>
+      <!--Section navbar 1-->
+      <details open>
+        <summary>
+          Setup
+        </summary>
         <ol>
-          <li>Qué es HTML</li>
-          <li>Etiquetas</li>
-          <li>DOM</li>
-          <li>Atributos</li>
-          <li>Semántica</li>
-          <li>Qué es CSS</li>
+          <li>
+            <a href="#google-chrome">
+            Google Chrome
+            </a>
+          </li>
+          <li>
+            <a href="#vsc">
+            Visual Studio Code
+            </a>
+          </li>
+          <li>
+            <a href="#figma">
+            Figma
+            </a>
+          </li>
+          <li>
+            <a href="#github">
+            GitHub
+            </a>
+          </li>
         </ol>
+      </details>
+
+      <!--Section navbar 1-->
+      <details>
+        <summary>
+          Conceptos esenciales del desarrollo web
+        </summary>
+        <ol>
+          <li>
+            <a href="#que-es-html">
+            Qué es HTML
+            </a>
+          </li>
+          <li>
+            <a href="#tags">
+            Etiquetas
+          </a>
+          </li>
+          <li>
+          <a href="#dom">
+            DOM
+          </a>
+        </li>
+        <li>
+          <a href="#atributos">
+            Atributos
+          </a>
+        </li>
+        <li>
+          <a href="#semantica">
+            Semántica
+          </a>
+            </li>
+            <li>
+              <a href="#que-es-css">
+                Qué es CSS
+              </a>
+          </li>
+        </ol>
+      </details>
     </nav>
   </header>
 
@@ -49,7 +93,7 @@
   </h2>
 
   <img src="assets/img/google-chrome.png" alt="Logo de Google Chrome" title="Logo de Google Chrome">
-  <h3>
+  <h3 id="google-chrome">
     Google Chrome
   </h3>
 
@@ -59,7 +103,7 @@
   </p>
 
   <img src="assets/img/visual-studio-code.png" alt="Logo de Visual Studio Code" title="Logo del editor de código Visual Studio Code">
-  <h3>
+  <h3 id="vsc">
 Visual Studio Code
 </h3>
 
@@ -70,7 +114,7 @@ Visual Studio Code
 </p>
 
 <img src="assets/img/figma.png" alt="Logo de Figma" title="Logo de Aplicación de diseño de interfaces Figma">
-  <h3>
+  <h3 id="figma">
     Figma
   </h3>
 
@@ -81,7 +125,7 @@ Visual Studio Code
 
 
       <img src="assets/img/github.png" alt="Logo de Github" title="Logo de GitHub">
-  <h3>
+  <h3 id="github">
     GitHub
   </h3>
 
@@ -91,25 +135,58 @@ Visual Studio Code
     manera privada, Github será esencial para almacenar tu futuro portafolio.
   </p>
 
-  <hr>
+<!--section 2part others links and articles-->
+   <hr>
     <h2>Conceptos esenciales del desarrollo web</h2>
-    <h3>Qué es HTML</h3>
-    <p>Hyper Text Markup Language o Lenguaje de marcas Hipertexto. Es el componente más básico de la web. Define el significado
-    y la estructura del contenido.</p>
-    <h3>Etiquetas</h3>
-    <p>Las etiquetas HTML van a ayudarnos a brindar una estructura y semántica al contenido de nuestro website y cada una tiene
-    características y usos diferentes aunque visualmente den un resultado similar.</p>
-    <p>Las etiquetas HTML van a ayudarnos a brindar una estructura y semántica al contenido de nuestro website y cada una tiene
-    características y usos diferentes aunque visualmente den un resultado similar.</p>
 
-    <h3>DOM</h3>
+
+    <!--Start information-->
+    <h3 id="que-es-html">Qué es HTML</h3>
+    <p>Hyper Text Markup Language o Lenguaje de marcas Hipertexto. Es el componente más básico de la web. Define el significado
+    y la estructura del contenido. <code>const name = 'Eduardo🤘'</code> </p>
+    <pre>
+      &lt;!DOCTYPE html&gt;
+      &lt;html lang=&quot;en&quot;&gt;
+      &lt;head&gt;
+      &lt;meta charset=&quot;UTF-8&quot;&gt;
+      &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
+      &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+      &lt;title&gt;Document&lt;/title&gt;
+      &lt;/head&gt;
+      &lt;body&gt;
+
+      &lt;/body&gt;
+      &lt;/html&gt;
+    </pre>
+
+    <h3 id="tags">Etiquetas</h3>
+    <p>Las etiquetas HTML van a ayudarnos a brindar una estructura y semántica al contenido de nuestro website y cada una tiene
+    características y usos diferentes aunque visualmente den un resultado similar.</p>
+    <p>Muchas etiquetas son fácil de diferencias como los headings o las imágenes y otras diferentes como header, footer,
+    section o div, aquí es donde la semántica será la respuesta y si sabemos un poco de inglés también podremos darnos una
+    pequeña idea de su uso pero en este curso vamos a usar las más importantes y que serán parte de tu día a día como
+    Software Developer.</p>
+
+    <h3 id="dom">DOM</h3>
     <p>El Document Object Model es una estructura de árbol que representará todos nuestros proyectos web como si un árbol
     genealógico fuera: padres, hijos, hermanos con niveles infinitos. cuando entendemos esta anidación podemos identificar
     dependencias, herencias en css y que tan complejo es nuestro proyecto.</p>
 
     <img src="assets/img/dom.png" alt="Imagen de Estructura de Arbol que representa al Document Object Model" title="Imagen de Estructura de Arbol que representa al Document Object Model">
 
-    <h3>CSS</h3>
+    <h3 id="semantica">Semántica</h3>
+    <p>La semántica le brinda sentido a cada elemento existen en un sitio web, algunos elementos será meramente decorativos y
+    no deben significar nada pero otros serán títulos y deberán estar en diferente jerarquías o alguna secciones serán más
+    relevantes que otras, esto ayudará a los motores de búsqueda como Google o Duck Duck Go a diferenciar tu contenido,
+    categorizar y será la herramientas más valiosa para estar en los primeros resultados de búsqueda SEO. También ayudará a
+    la accesibilidad de tu sitio web, para que personas con habilidades diferentes puedan entender cada contenido.</p>
+
+    <h3 id="atributos">Atributos</h3>
+    <p>Los atributos le dan características extra a las etiquetas para complementar información y son pre programadas por el
+    navegador, algunos atributos funcionan en todas las etiquetas de la misma forma como ‘class’ pero otros atributos
+    funcionan en solo alguna etiquetas como src</p>
+
+    <h3 id="que-es-css">CSS</h3>
     <p>Hojas de Estilo en Cascada (del inglés Cascading Style Sheets) o CSS es el lenguaje de estilos utilizado para describir
     la presentación de documentos HTML</p>
     <img src="assets/img/css.png" alt="Imagen Ilustrativa del Logo de Cascading Style Sheets" title="Imagen Ilustrativa del Logo de Cascading Style Sheets">
@@ -156,7 +233,7 @@ Visual Studio Code
     </ul>
 
     <h3>Modelo de caja</h3>
-    <img src="assets/img/leonidas-esteban-en-el-puente-de-san-francisco.png" alt="Fotografía de Leonidas Esteban en el puente de San Francisco" title="Fotografía de Leonidas Esteban en el puente de San Francisco">
+    <img src="/assets/img/leonidas-esteban-en-el-puente-de-san-francisco.png" alt="Fotografía de Leonidas Esteban en el puente de San Francisco" title="Fotografía de Leonidas Esteban en el puente de San Francisco">
 
       <p>Si tienes alguna pregunta escribeme a <a href="mailto:eduardo@workuping.com">me@leonidasesteban.com</a></p>
 
